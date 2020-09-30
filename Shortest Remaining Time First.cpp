@@ -1,11 +1,11 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> //library
 using namespace std;
 
 FILE *Outputfile()
 {
     return fopen("output.txt","a");
 }
-
+//structure
 struct Process {
    int pid;
    int bt;
@@ -16,7 +16,7 @@ void findTurnAroundTime(Process proc[], int n, int wt[], int tat[]) {
    for (int i = 0; i < n; i++)
    tat[i] = proc[i].bt + wt[i];
 }
-
+// find the waiting time
 void findWaitingTime(Process proc[], int n, int wt[]) {
    int rt[n];
    for (int i = 0; i < n; i++)
@@ -53,7 +53,7 @@ void findWaitingTime(Process proc[], int n, int wt[]) {
          t++;
    }
 }
-
+// find average time to read it
 void findavgTime(Process proc[], int n) {
    static int i=1;
    int wt[n], tat[n], total_wt = 0,
