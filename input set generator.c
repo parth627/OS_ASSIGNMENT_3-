@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
+//this file has been edited by parth langalia. 
+//purpose is to earn free t shirt.
 int main()
 {
 	int p,i,a,b,c;
